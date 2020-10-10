@@ -1,5 +1,7 @@
+package it.marconicloud.fantacalcio;
+
 // Il nome della classe principale deve essere uguale a quella del file in cui si trova
-class Calciatore {
+public class Calciatore {
 
   // "private" è un modificatore che fa in modo che dall'esterno di questo file non possa essere modificata la variabile
 
@@ -14,12 +16,15 @@ class Calciatore {
   private int dribbling = 0;
   private int tiro = 0;
   private int difesa = 0;
-    
-  String squadra = "";
+
 
   // Costruttore
-  public Calciatore(String nome) {
+  public Calciatore(String nome, int velocita, int dribbling, int tiro, int difesa) {
     this.nome = nome;
+    this.velocita = velocita;
+    this.dribbling = dribbling;
+    this.tiro = tiro;
+    this.difesa = difesa;
   }
 
   // Funzione di getter
@@ -28,4 +33,19 @@ class Calciatore {
     return this.nome;
   }
 
+  public int getVelocita() {
+    return this.velocita;
+  }
+
+  public int getDribbling() {
+    return this.dribbling;
+  }
+
+  public int getTiro() {
+    return this.tiro;
+  }
+
+  public int getDifesa() {
+    return this.difesa;
+  }
 }

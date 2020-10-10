@@ -1,3 +1,9 @@
+# DESTINATARI
+Ragazzi delle scuole superiori
+
+# MOTIVAZIONE
+Divertimento (Entertainment)
+
 # CONCETTI
 - Calciatori
 - Squadre
