@@ -3,7 +3,6 @@ import it.marconicloud.fantacalcio.*;
 import java.util.Random;
 
 class Main {
-
   public static void main(String[] args) {
     System.out.println("Benvenuti al Fanta Calcio del 4Binf del Marconi di Civitavecchia!");
 
@@ -13,38 +12,43 @@ class Main {
     Calciatore[] liverpool = new Calciatore[8];
 
     chelsea[0] = new Calciatore("Alessio Gasparri", rand.nextInt(90) + 11, rand.nextInt(90) + 11, rand.nextInt(90) + 11,
-        rand.nextInt(90) + 11);
+        rand.nextInt(90) + 11, Ruolo.DIFENSORE);
     chelsea[1] = new Calciatore("Matteo Verticelli", rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1, rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1, rand.nextInt(100) + 1, Ruolo.PORTIERE);
     chelsea[2] = new Calciatore("Stefano Cacchiarelli", rand.nextInt(100) + 1, rand.nextInt(100) + 1,
+        rand.nextInt(100) + 1, rand.nextInt(100) + 1, Ruolo.DIFENSORE);
+
+
+    chelsea[3] = new Portiere("Andrea Costantini", rand.nextInt(100) + 1, rand.nextInt(100) + 1,
         rand.nextInt(100) + 1, rand.nextInt(100) + 1);
-    chelsea[3] = new Calciatore("Andrea Costantini", rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1, rand.nextInt(100) + 1);
+
+
+        
     chelsea[4] = new Calciatore("Edoardo Dionisi", rand.nextInt(100) + 1, rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1, Ruolo.DIFENSORE);
     chelsea[5] = new Calciatore("Martina Miglietta", rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1, rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1, rand.nextInt(100) + 1,Ruolo.DIFENSORE);
     chelsea[6] = new Calciatore("Leonardo Teti", rand.nextInt(100) + 1, rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1,Ruolo.DIFENSORE);
     chelsea[7] = new Calciatore("Cristiano Tullio", rand.nextInt(100) + 1, rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1, Ruolo.ATTACCANTE);
 
     liverpool[0] = new Calciatore("Gianluca Anselmi", rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1, rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1, rand.nextInt(100) + 1,Ruolo.PORTIERE);
     liverpool[1] = new Calciatore("Gabriele Cerqua", rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1, rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1, rand.nextInt(100) + 1,Ruolo.DIFENSORE);
     liverpool[2] = new Calciatore("Ionut Cicio", rand.nextInt(100) + 1, rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1,Ruolo.CENTROCAMPISTA);
     liverpool[3] = new Calciatore("Denis Cioineag", rand.nextInt(100) + 1, rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1,Ruolo.CENTROCAMPISTA);
     liverpool[4] = new Calciatore("Toma Lupu", rand.nextInt(100) + 1, rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1,Ruolo.DIFENSORE);
     liverpool[5] = new Calciatore("Victor Miheev", rand.nextInt(100) + 1, rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1, Ruolo.DIFENSORE);
     liverpool[6] = new Calciatore("Carlo Perna", rand.nextInt(100) + 1, rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1, Ruolo.CENTROCAMPISTA);
     liverpool[7] = new Calciatore("Domenico Salernitano", rand.nextInt(100) + 1, rand.nextInt(100) + 1,
-        rand.nextInt(100) + 1, rand.nextInt(100) + 1);
+        rand.nextInt(100) + 1, rand.nextInt(100) + 1,Ruolo.CENTROCAMPISTA);
 
     System.out.println();
     // Se chiedo di stampare una variabile, mi stampa la classe e un "riferimento"

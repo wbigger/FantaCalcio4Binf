@@ -4,6 +4,9 @@ Ragazzi delle scuole superiori
 # MOTIVAZIONE
 Divertimento (Entertainment)
 
+# BRIEF
+Vogliamo implementare un fantacalcio per i ragazzi delle scuole superiori, deve poter essere giocato da dispositivo mobile (prima di tutto smartphone).
+
 # CONCETTI
 - Calciatori
 - Squadre

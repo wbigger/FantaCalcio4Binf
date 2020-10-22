@@ -1,5 +1,6 @@
 package it.marconicloud.fantacalcio;
 
+import it.marconicloud.fantacalcio.Ruolo;
 // Il nome della classe principale deve essere uguale a quella del file in cui si trova
 public class Calciatore {
 
@@ -8,7 +9,7 @@ public class Calciatore {
   // Questa pratica si chiama INCAPSULAMENTO ("encapsulation")
 
   private String nome = "";
-  private String ruolo = "";
+  private Ruolo ruolo;
   
   // Statistiche
   // Tutte le stats sono da 1 a 100
@@ -19,12 +20,13 @@ public class Calciatore {
 
 
   // Costruttore
-  public Calciatore(String nome, int velocita, int dribbling, int tiro, int difesa) {
+  public Calciatore(String nome, int velocita, int dribbling, int tiro, int difesa, Ruolo ruolo) {
     this.nome = nome;
     this.velocita = velocita;
     this.dribbling = dribbling;
     this.tiro = tiro;
     this.difesa = difesa;
+    this.ruolo = ruolo;
   }
 
   // Funzione di getter
@@ -47,5 +49,32 @@ public class Calciatore {
 
   public int getDifesa() {
     return this.difesa;
+  }
+
+  // solo per ruolo attaccante!!!
+  public int tira() {
+      int valoreTiro = (this.tiro+this.dribbling) / 2;
+      return valoreTiro;
+  }
+
+  public void faiAzione () {
+      switch (this.ruolo) {
+        case DIFENSORE: {
+            System.out.println(this.nome + " intercetta il pallone in aria!");
+            break;
+        }
+        case ATTACCANTE: {
+          System.out.println(this.nome + " tenta il tiro dai trenta metri!");
+          break;
+        }
+        case CENTROCAMPISTA: {
+          System.out.println(this.nome + " effettua un assist molto efficace!");
+          break;
+        }
+        case PORTIERE: {
+          System.out.println(this.nome + " para un tiro incredibile!");
+          break;
+        }
+      }
   }
 }
