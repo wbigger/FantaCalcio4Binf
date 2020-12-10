@@ -6,6 +6,6 @@ public interface Attore {
 
   public String getNome();
 
-  public Dictionary getValori();
+  //public Dictionary getValori();
 
 }

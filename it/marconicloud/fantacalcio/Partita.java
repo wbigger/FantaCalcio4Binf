@@ -1,8 +1,25 @@
 package it.marconicloud.fantacalcio;
 
-import java.util.Random;
 
-public class Partita {
+import java.util.Random;
+import it.marconicloud.cronaca.*;
+
+
+public class Partita implements Cronaca {
+
+    class Evento implements it.marconicloud.cronaca.Evento {
+      public String getDescrizione() {
+        return "ciao!";
+      }
+      public Attore[] getAttori() {
+        Attore[] attori = new Attore[1];
+        attori[0] =  new Calciatore("Alessio Gasparri", 55, 55, 55,
+        55, Ruolo.DIFENSORE);;
+        return attori;
+      }
+    }
+
+
   private Calciatore[] squadraInCasa;
   private Calciatore[] squadraOspite;
   private int punteggioCasa = 0;
@@ -10,9 +27,17 @@ public class Partita {
   private Random rand;
 
   public Partita(Calciatore[] squadraInCasa, Calciatore[] squadraOspite) {
+
     this.squadraInCasa = squadraInCasa;
     this.squadraOspite = squadraOspite;
     this.rand = new Random(1009872);
+  }
+
+  @Override
+  public Evento[] getListaEventi() {
+    Evento eventi[] = new Partita.Evento[1];
+    eventi[0] = new Partita.Evento();
+    return eventi;
   }
 
   public void gioca() {
