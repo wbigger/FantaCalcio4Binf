@@ -6,12 +6,13 @@ class Main {
   public static void main(String[] args) {
     System.out.println("Benvenuti al Fanta Calcio del 4Binf del Marconi di Civitavecchia!");
 
-    Random rand = new Random(2021);
+
+    Random rand = new Random(2035);
 
     Calciatore[] chelsea = new Calciatore[8];
     Calciatore[] liverpool = new Calciatore[8];
 
-    chelsea[0] = new Calciatore("Alessio Gasparri", rand.nextInt(90) + 11, rand.nextInt(90) + 11, rand.nextInt(90) + 11,
+    chelsea[0] = new Calciatore("Alessio Gasparri", rand.nextInt(80) + 21, rand.nextInt(90) + 11, rand.nextInt(90) + 11,
         rand.nextInt(90) + 11, Ruolo.DIFENSORE);
     chelsea[1] = new Calciatore("Matteo Verticelli", rand.nextInt(100) + 1, rand.nextInt(100) + 1,
         rand.nextInt(100) + 1, rand.nextInt(100) + 1, Ruolo.PORTIERE);
