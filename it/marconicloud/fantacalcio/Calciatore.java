@@ -1,7 +1,11 @@
 package it.marconicloud.fantacalcio;
 
 import it.marconicloud.fantacalcio.Ruolo;
+
 import it.marconicloud.cronaca.Attore;
+
+
+
 // Il nome della classe principale deve essere uguale a quella del file in cui si trova
 public class Calciatore implements Attore {
 

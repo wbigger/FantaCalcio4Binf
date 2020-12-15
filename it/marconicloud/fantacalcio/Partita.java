@@ -7,18 +7,18 @@ import it.marconicloud.cronaca.*;
 
 public class Partita implements Cronaca {
 
+    // Posso implementare partita come una classe interno alla classe Partita (classe annidata o _nested_) per mantenere le cose più ordinate, visto che nel nostro caso solo Partita usa Evento
     class Evento implements it.marconicloud.cronaca.Evento {
       public String getDescrizione() {
-        return "ciao!";
+        return "descrizione evento";
       }
       public Attore[] getAttori() {
         Attore[] attori = new Attore[1];
-        attori[0] =  new Calciatore("Alessio Gasparri", 55, 55, 55,
+        attori[0] =  new Calciatore("Alessio", 55, 55, 55,
         55, Ruolo.DIFENSORE);;
         return attori;
       }
     }
-
 
   private Calciatore[] squadraInCasa;
   private Calciatore[] squadraOspite;

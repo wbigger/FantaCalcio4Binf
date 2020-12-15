@@ -1,6 +1,6 @@
 package it.marconicloud.cronaca;
 
-import java.util.Dictionary; 
+// import java.util.Dictionary; 
 
 public interface Attore {
 
