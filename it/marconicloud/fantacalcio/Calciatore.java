@@ -1,22 +1,28 @@
 package it.marconicloud.fantacalcio;
 
 import it.marconicloud.fantacalcio.Ruolo;
+
+import it.marconicloud.cronaca.Attore;
+
+
+
 // Il nome della classe principale deve essere uguale a quella del file in cui si trova
-public class Calciatore {
+public class Calciatore implements Attore {
 
   // "private" è un modificatore che fa in modo che dall'esterno di questo file non possa essere modificata la variabile
 
   // Questa pratica si chiama INCAPSULAMENTO ("encapsulation")
 
-  private String nome = "";
-  private Ruolo ruolo;
+  protected String nome = "";
+  protected Ruolo ruolo;
   
   // Statistiche
   // Tutte le stats sono da 1 a 100
-  private int velocita = 0;
-  private int dribbling = 0;
-  private int tiro = 0;
-  private int difesa = 0;
+  protected int velocita = 0;
+  protected int dribbling = 0;
+  protected int tiro = 0;
+  protected int difesa = 0;
+
 
 
   // Costruttore
