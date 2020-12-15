@@ -1,5 +1,6 @@
 
 import it.marconicloud.fantacalcio.*;
+import it.marconicloud.cronaca.*;
 import java.util.Random;
 
 class Main {
@@ -77,9 +78,18 @@ class Main {
       System.out.println();
     }
 
-    Partita partitaDelSecolo = new Partita(chelsea,liverpool);  
+    // Interfaces from here
 
-    partitaDelSecolo.gioca();      
+    Cronaca partitaDelSecolo = new Partita(chelsea,liverpool);  
+
+    Evento[] eventi = partitaDelSecolo.getListaEventi();      
+    
+    for (Evento e : eventi) {
+      if (e != null) {
+       System.out.println(e.getDescrizione());
+      }
+    }
+
     
   }
 }

@@ -63,24 +63,26 @@ public class Calciatore implements Attore {
       return valoreTiro;
   }
 
-  public void faiAzione () {
+  public String faiAzione () {
+    String ret = "";
       switch (this.ruolo) {
         case DIFENSORE: {
-            System.out.println(this.nome + " intercetta il pallone in aria!");
+            ret = this.nome + " intercetta il pallone in aria!";
             break;
         }
         case ATTACCANTE: {
-          System.out.println(this.nome + " tenta il tiro dai trenta metri!");
+          ret = this.nome + " tenta il tiro dai trenta metri!";
           break;
         }
         case CENTROCAMPISTA: {
-          System.out.println(this.nome + " effettua un assist molto efficace!");
+          ret = this.nome + " effettua un assist molto efficace!";
           break;
         }
         case PORTIERE: {
-          System.out.println(this.nome + " para un tiro incredibile!");
+          ret = this.nome + " para un tiro incredibile!";
           break;
         }
       }
+      return ret;
   }
 }
